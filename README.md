@@ -1,30 +1,99 @@
 # Aura Browser
 
-**Aura** is a fast, lightweight (**4.0 MB** `.app`, **1.8 MB** `.dmg`), native macOS browser built with Swift, SwiftUI, WebKit, and Apple Speech Recognition.
+> **A fast, voice-first web browser designed for modern daily life on Mac.**  
+> Ultra-lightweight, private, and packed with tools for work, study, focus, and social messaging.
 
-**Developer:** `sntechwizard`
+**Developer:** `sntechwizard`  
+**License:** Freeware / Closed Source
 
-## Key Features
+---
 
-- **Voice-First Browsing (`⌘⇧V`)**:
-  - Gemini-style **Voice Search Bubble** home page (`aura://home`) with live speaking text bubble and 1.0s auto-navigation.
-  - Persistent **Bottom Voice Bubble** on every webpage.
-  - Natural voice commands (*"new tab"*, *"private tab"*, *"reader mode"*, *"dark mode"*, *"open whatsapp"*, *"widgets"*, *"home"*, *"screenshot"*).
-- **Isolated Modes (Spaces)**:
-  - **Personal**, **Work**, **Study**, and **Music** workspaces—plus **Custom Modes** (`+` in sidebar)—each with isolated cookies, cache, and website data (`WKWebsiteDataStore(forIdentifier:)`).
-- **Arc + Chrome Productivity**:
-  - Collapsible **Left Sidebar** (`⌘\`) with Favorite tiles, Pinned tabs, and **Collapsible Tab Folders** (with right-click **Move to Folder** & **Delete Folder**).
-  - **Speed Tabs**: `⌘1`–`⌘5` and `⌘⌥→` / `⌘⌥←`.
-  - **Split View**: View two tabs side-by-side.
-  - **Memory Saver (`⌘⇧H`)**: Automatic + manual tab hibernation to keep RAM low.
-  - **Private / Incognito Tabs (`⌘⇧N`)**, **Reopen Closed Tab (`⌘⇧T`)**, **Bookmarks (`⌘D`)**, **Reading List**, **History**, **Downloads**, **Find in Page (`⌘F`)**, **Save as PDF (`⌘P`)**, **Screenshots**, and **Native Share Sheet**.
-- **Chat-Focused Mode (`⌘⇧M`)**:
-  - 1-click switcher for **WhatsApp**, **Instagram**, **Telegram**, **Discord**, **X**, **Slack**, and **Messenger**.
-- **Widgets Sidebar (`⌘⇧W`)**:
-  - **Time & Date**, **25:00 Focus Timer**, **Music Player** (Play/Pause/Next/Prev + Now Playing title + YT Music/Spotify/SoundCloud), **Space Notes**, **Widget Library** presets, and **Custom Widgets**.
-- **Developer Mode (`⌘⇧D`)**:
-  - Live **JavaScript Console**, **Hard Reload**, **View Page Source**, **Web Inspector**, and **Phone/Tablet Responsive Simulator** (Desktop, iPhone, Android, iPad).
-- **Chrome Extensions (MV2 / MV3)**:
-  - Load unpacked extension folders (`manifest.json` `content_scripts`) from the toolbar puzzle icon.
-- **Dark Mode & Palettes**:
-  - 1-click **Dark / Light Mode** toggle that syncs `prefers-color-scheme: dark` and forces dark mode on light pages, plus 6 customizable color palettes in **Settings**.
+## ⚡ What Makes Aura Different?
+
+- **Voice-First by Default (`⌘⇧V`)**: A clean speech-driven home page that understands what you say and automatically navigates to websites or performs searches hands-free.
+- **Isolated Life Workspaces**: Four dedicated spaces—**Personal**, **Work**, **Study**, and **Music**—each with completely independent logins, cookies, and browsing sessions.
+- **Instant Chat Dock (`⌘⇧M`)**: Switch between WhatsApp, Instagram, Telegram, Discord, X, Slack, and Messenger in one click without losing your place.
+- **Sidekick Widgets (`⌘⇧W`)**: Built-in 25-minute Pomodoro focus timer, music player controls, scratchpad notes, and quick-link web widgets.
+- **Ultra-Lightweight**: Under **5 MB** in size with automatic background tab hibernation to keep your Mac running cool and fast.
+
+---
+
+## 🚀 Quick Start Guide
+
+### Installation
+1. Download **`Aura.dmg`**.
+2. Double-click the DMG and drag **Aura** into your **Applications** folder.
+3. Open **Aura** from Spotlight or your Applications folder.
+
+---
+
+## 🎙️ Daily Features & How to Use Them
+
+### 1. Hands-Free Voice Search
+- Tap the **Voice Bubble** on the home page or press **`⌘⇧V`** anywhere in the browser.
+- Speak naturally:
+  - *"Weather in New York"*
+  - *"Open WhatsApp"*
+  - *"Turn on dark mode"*
+  - *"Take a screenshot"*
+  - *"Open study mode"*
+- Aura transcribes your words live and auto-navigates 1 second after you finish speaking.
+
+### 2. Workspaces & Profiles
+- Click the icons on the left sidebar to change modes:
+  - **✨ Personal**: For casual browsing, shopping, and entertainment.
+  - **💼 Work**: Keep your office Google Workspace, Jira, and Slack accounts separate.
+  - **🎓 Study**: Distraction-free reading with dedicated notes and timers.
+  - **🎵 Music**: Dedicated playback space for Spotify, YouTube Music, and SoundCloud.
+  - **➕ Custom**: Create your own custom spaces anytime from the sidebar.
+
+### 3. Chat-Focused Mode (`⌘⇧M`)
+- Press **`⌘⇧M`** or click the chat bubble icon in the top toolbar to reveal the floating Chat Dock.
+- Tap any service (**WhatsApp, Instagram, Telegram, Discord, Slack**) to jump straight to your messages.
+
+### 4. Apple-Style Widgets Sidebar (`⌘⇧W`)
+- Press **`⌘⇧W`** or click the grid icon to open the widget shelf:
+  - **Focus Timer**: Start a 25-minute study or work sprint.
+  - **Music Player**: Play, pause, or skip tracks on YouTube Music or Spotify without switching tabs.
+  - **Workspace Notes**: Write quick memos and task lists that save automatically.
+  - **Widget Library**: Add quick-access tiles for Calculator, Calendar, ChatGPT, GitHub, and more.
+
+### 5. Reader Mode & Dark Boost
+- **Reader Mode (`⌘⇧R`)**: Cleans articles into a distraction-free, uncluttered reading layout.
+- **Dark Boost**: Forces dark backgrounds on websites that don't support dark mode natively.
+
+### 6. Power Tools & Device Testing (`⌘⇧D`)
+- Test mobile layouts directly on your Mac with responsive simulator frames (**iPhone, Android, iPad**).
+- One-click page tools: **Save as PDF (`⌘P`)**, **Capture Screenshot**, and **Duplicate Tab**.
+
+---
+
+## ⌨️ Essential Keyboard Shortcuts
+
+| Shortcut | Action |
+| :--- | :--- |
+| **`⌘⇧O`** | Go to Voice Home Page |
+| **`⌘⇧V`** | Activate Voice Search |
+| **`⌘K` / `⌘L`** | Open Command Bar / Address Search |
+| **`⌘T` / `⌘W`** | New Tab / Close Tab |
+| **`⌘⇧T`** | Reopen Last Closed Tab |
+| **`⌘⇧N`** | Open Private / Incognito Tab |
+| **`⌘1` – `⌘5`** | Instant Jump to Tab 1–5 |
+| **`⌘⌥→` / `⌘⌥←`** | Next / Previous Tab |
+| **`⌘\`** | Collapse / Expand Left Sidebar |
+| **`⌘⇧W`** | Open / Close Widgets Sidebar |
+| **`⌘⇧M`** | Toggle Chat Dock |
+| **`⌘⇧D`** | Developer Console & Device Simulator |
+| **`⌘⇧R`** | Toggle Reader Mode |
+| **`⌘D`** | Bookmark Page |
+| **`⌘⇧H`** | Hibernate Inactive Tabs to Free Memory |
+| **`⌘P`** | Save Page as PDF |
+| **`⌘⇧C`** | Copy Current URL |
+
+---
+
+## 🔒 Privacy & Safety
+- **No Background Tracking**: Aura does not harvest your browsing habits or collect analytics.
+- **Isolated Storage**: Cookies and cache from work stay in work—they never bleed into personal or study tabs.
+- **Private Browsing**: Incognito tabs write zero cookies or history to your disk.
+- **Camera & Mic Safety**: Websites must ask for explicit permission before accessing your microphone or camera.
